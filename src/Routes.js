@@ -1,11 +1,14 @@
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import React from 'react';
+import some from 'lodash/some';
 
-import Overview from './Routes/Overview';
+import Insights from './Routes/Insights';
+import CloudManagement from './Routes/CloudManagement';
 
 const paths = {
-    overview: '/'
+    insights: '/insights',
+    cloudManagement: '/cloud-management-services'
 };
 
 const InsightsRoute = ({ component: Component, rootClass, ...rest }) => {
@@ -22,12 +25,15 @@ InsightsRoute.propTypes = {
     rootClass: PropTypes.string
 };
 
-export const Routes = () => {
+export const Routes = (props) => {
+
+    const path = props.childProps.location.pathname;
 
     return (
         <Switch>
-            <InsightsRoute path={ paths.overview } component={ Overview } rootClass='overview'/>
-            <InsightsRoute component={ Overview } rootClass='overview' />
+            <InsightsRoute path={ paths.insights } component={ Insights } rootClass='insights'/>
+            <InsightsRoute path={ paths.cloudManagement } component={ CloudManagement } rootClass='cloudManagement'/>
+            <Route render={ () => some(paths, p => p === path) ? null : (<Redirect to={ paths.insights }/>) }/>
         </Switch>
     );
 };
