@@ -2,7 +2,7 @@ import { Route, Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import Overview from './routes/Overview';
+import Overview from './Routes/Overview';
 
 const paths = {
     overview: '/'
