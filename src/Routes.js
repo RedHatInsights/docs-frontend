@@ -11,7 +11,7 @@ const paths = {
 const InsightsRoute = ({ component: Component, rootClass, ...rest }) => {
     const root = document.getElementById('root');
     root.removeAttribute('class');
-    root.classList.add(`page__${rootClass}`, 'pf-c-page__main');
+    root.classList.add(`page__${rootClass}`, 'pf-c-page__main', 'ins-c-page__product-docs');
     root.setAttribute('role', 'main');
 
     return (<Route { ...rest } component={ Component } />);

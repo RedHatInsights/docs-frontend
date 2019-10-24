@@ -3,6 +3,11 @@ import { withRouter } from 'react-router-dom';
 
 import { Main, PageHeader, PageHeaderTitle } from '@redhat-cloud-services/frontend-components';
 
+import CloudManagement from './CloudManagement';
+import Insights from './Insights';
+
+import './overview.scss';
+
 class Overview extends Component {
 
     render() {
@@ -12,7 +17,8 @@ class Overview extends Component {
                     <PageHeaderTitle title='Product Documentation'/>
                 </PageHeader>
                 <Main>
-                    <h1> Sample Component </h1>
+                    <CloudManagement/>
+                    <Insights/>
                 </Main>
             </React.Fragment>
         );

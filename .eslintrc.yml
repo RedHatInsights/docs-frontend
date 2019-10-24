@@ -71,6 +71,7 @@ rules:
   new-cap: 2
   no-bitwise: 2
   no-caller: 2
+  no-console: 1
   no-mixed-spaces-and-tabs: 2
   no-multiple-empty-lines:
     - error
@@ -80,7 +81,7 @@ rules:
     - error
     - functions: false
   no-undef: 2
-  no-unused-vars: 2
+  no-unused-vars: 1
   no-var: 2
   no-with: 2
   object-shorthand: 2
