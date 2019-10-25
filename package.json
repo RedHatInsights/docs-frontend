@@ -87,6 +87,6 @@
     "nightly": "npm run deploy"
   },
   "insights": {
-    "appname": "product-docs"
+    "appname": "product"
   }
 }
