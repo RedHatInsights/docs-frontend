@@ -5,11 +5,7 @@ import some from 'lodash/some';
 
 import Insights from './Routes/Insights';
 import CloudManagement from './Routes/CloudManagement';
-
-const paths = {
-    insights: '/insights',
-    cloudManagement: '/cloud-management-services'
-};
+import { routes as paths } from '../package.json';
 
 const InsightsRoute = ({ component: Component, rootClass, ...rest }) => {
     const root = document.getElementById('root');

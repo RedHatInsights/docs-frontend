@@ -17,7 +17,7 @@ class ProductList extends Component {
                     <Card className='ins-c-product-documentation__card' key= { name }>
                         <CardHeader className='ins-c-product-doc__info'> { name } </CardHeader>
                         <CardBody>
-                            <Stack gutter='md'>
+                            <Stack hasGutter>
                                 { info.map((section) => (
                                     <StackItem key={ section.title }>
                                         <dl>
