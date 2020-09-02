@@ -12,7 +12,7 @@ class Insights extends Component {
         return (
             <React.Fragment>
                 <PageHeader>
-                    <PageHeaderTitle title='Product Documentation for Red Hat Insights'/>
+                    <PageHeaderTitle title='Documentation for Red Hat Insights'/>
                 </PageHeader>
                 <Main>
                     <ProductList data={ data }/>
