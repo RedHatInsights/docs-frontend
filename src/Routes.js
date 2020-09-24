@@ -30,7 +30,7 @@ export const Routes = (props) => {
         <Switch>
             <InsightsRoute path={ paths.insights } component={ Insights } rootClass='insights'/>
             <InsightsRoute path={ paths.cost } component={ Cost } rootClass='cost'/>
-            { /* <InsightsRoute path={ paths.cloudManagement } component={ CloudManagement } rootClass='cloudManagement'/> }
+            //* <InsightsRoute path={ paths.cloudManagement } component={ CloudManagement } rootClass='cloudManagement'/>
             <Route render={ () => some(paths, p => p === path) ? null : (<Redirect to={ paths.insights }/>) }/>
         </Switch>
     );
