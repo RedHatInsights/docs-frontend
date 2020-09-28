@@ -4,15 +4,15 @@ import { withRouter } from 'react-router-dom';
 import { Main, PageHeader, PageHeaderTitle } from '@redhat-cloud-services/frontend-components';
 
 import ProductList from '../PresentationalComponents/ProductList';
-import { Insights as data } from '../Consts/Insights';
+import { Cost as data } from '../Consts/Cost';
 
-class Insights extends Component {
+class Cost extends Component {
 
     render() {
         return (
             <React.Fragment>
                 <PageHeader>
-                    <PageHeaderTitle title='Documentation for Red Hat Insights'/>
+                    <PageHeaderTitle title='Documentation for Cost Management'/>
                 </PageHeader>
                 <Main>
                     <ProductList data={ data }/>
@@ -22,4 +22,4 @@ class Insights extends Component {
     }
 }
 
-export default withRouter(Insights);
+export default withRouter(Cost);
