@@ -95,6 +95,6 @@
     "prefix": "docs",
     "appname": "product",
     "insights": "/insights",
-    "cloud-management-services": "/cloud-management-services"
+    "cost": "/cost-management"
   }
 }
