@@ -95,6 +95,7 @@
     "prefix": "docs",
     "appname": "product",
     "insights": "/insights",
-    "cost": "/cost-management"
+    "cost": "/cost-management",
+    "subwatch": "/subscription-watch"
   }
 }
