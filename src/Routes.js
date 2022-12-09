@@ -5,6 +5,7 @@ import some from 'lodash/some';
 
 import Insights from './Routes/Insights';
 import Cost from './Routes/Cost';
+import SubWatch from './Routes/SubWatch';
 // import CloudManagement from './Routes/CloudManagement';
 import { routes as paths } from '../package.json';
 
@@ -30,6 +31,7 @@ export const Routes = (props) => {
         <Switch>
             <InsightsRoute path={ paths.insights } component={ Insights } rootClass='insights'/>
             <InsightsRoute path={ paths.cost } component={ Cost } rootClass='cost'/>
+            <InsightsRoute path={ paths.subwatch } componet={ SubWatch } rootClass='subwatch'/>
             { /* <InsightsRoute path={ paths.cloudManagement } component={ CloudManagement } rootClass='cloudManagement'/> */ }
             <Route render={ () => some(paths, p => p === path) ? null : (<Redirect to={ paths.insights }/>) }/>
         </Switch>
